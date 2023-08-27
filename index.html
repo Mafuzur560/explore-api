@@ -6,8 +6,25 @@
     <title>POST YOUR DREAM</title>
 </head>
 <style>
+    h1{
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    #header-item{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
     .post{
         background-color: aqua;
+        margin-top: 3rem;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .todos{
+        background-color: aquamarine;
         margin-top: 3rem;
         padding: 2rem;
         border-radius: 1rem;
@@ -16,13 +33,18 @@
 <body>
     <header>
         <h1>DISPLAY ALL POST</h1>
-        <bUtton onclick="loadPosts()">SEE</bUtton>
+        <div id="header-item">
+            <bUtton onclick="loadPosts()">SEE POST</bUtton>
+            <button onclick="todosShow()">SEE TODOS</button>
+        </div>
     </header>
     <main>
         <section>
-            <h3>ALL ITEM HERE</h3>
             <!-- Display all item -->
             <div id="display-container">
+
+            </div>
+            <div id="display-container2">
 
             </div>
         </section>
@@ -30,5 +52,6 @@
     <footer></footer>
 
     <script src="./post.js"></script>
+    <script src="./todos.js"></script>
 </body>
 </html>
